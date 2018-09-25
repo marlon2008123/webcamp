@@ -105,6 +105,32 @@ html{
 }
 body{
     background-color: #f2f2f2;
+    font-family: 'Open Sans', sans-serif;
+}
+h2{
+    font-family: 'PT Sans', sans-serif;
+}
+.contenedor{
+    width: 98%;
+    margin: 0 auto;
+}
+@media only screen and (min-width:480px){
+    .contenedor{
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+@media only screen and (min-width:768px){
+    .contenedor{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+@media only screen and (min-width:992px){
+    .contenedor{
+        width: 90%;
+        margin: 0 auto;
+    }
 }
 /**header**/
 
@@ -117,6 +143,11 @@ div.hero{
 }
 div.contenido-header{
     padding-top: 40px;
+}
+@media only screen and (min-width:756px){
+    div.contenido-header{
+        padding-top: 20px;
+    }
 }
 nav.redes-sociales{
     text-align: center;
@@ -134,6 +165,13 @@ div.informacion-evento{
     text-align: center;
     color: white;
 }
+@media only screen and (min-width:756px){
+    div.informacion-evento{
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+}
 div.informacion-evento p{
     margin: 0;
     display: inline;
@@ -142,20 +180,89 @@ div.informacion-evento p{
 }
 div.informacion-evento p i{
     color: orangered;
+    font-size: 2.6rem;
 }
 p.fecha{
     float:left;
 }
 p.ciudad{
     float: right;
+    text-align: right;
 }
 
+h1.nombre-de-sitio{
+    font-family: 'Unlock', cursive;
+    font-size: 5.96vw;
+    text-transform: uppercase;
+}
+@media only screen and (min-width:756px){
+    h1.nombre-de-sitio{
+       font-size: 11.5vw;
+       margin: 0; 
+       line-height: 1;
+    }
+}
+p.slogan{
+    text-transform: none!important;
+}
+/**barra**/
+div.barra{
+    background-color: #353535;
+    padding: 20px 0;
+    
+}
+
+div.logo{
+    width: 80%;
+}
+div.logo img{
+    width: 100%
+}
+@media only screen and (min-width:768px){
+    div.logo{
+        width: 33%;
+        float: left;
+    }
+}
+/**navegacion principal**/
+nav.navegacion-principal{
+    display: none;
+}
+nav.navegacion-principal a{
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size:  1.3em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all .7s ease;
+}
+nav.navegacion-principal a:last-child{
+    border: 2px solid #fe4918;
+    color: #fe4918;
+}
+nav.navegacion-principal a:hover{
+
+background-color: #fe4918;
 
 
-
-
-
-
+}
+nav.navegacion-principal a:last-child:hover{
+    border: 2px solid #fe4918;
+    color: white;
+}
+@media only screen and (min-width:768px){
+    nav.navegacion-principal{
+        width: 66.6%;
+        float: right;
+        text-align: right;
+        display: block;
+    }
+    nav.navegacion-principal a{
+        margin-right: 10px;
+        padding: 30px 20px;
+        display: inline-block;
+    }
+}
 
 
 
